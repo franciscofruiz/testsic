@@ -49,7 +49,7 @@ CREATE TRIGGER ai_radicacion_log AFTER INSERT ON radicaciones
 FOR EACH ROW
 BEGIN
   INSERT INTO radicacion_logs (fecha_log, accion, id_radicacion, nombre_solicitante, fecha, asunto, texto_solicitud, usuario_crea_id)
-  VALUES(NOW(), 'creación',  NEW.id, NEW.nombre_solicitante, NEW.fecha, NEW.asunto, NEW.texto_solicitud, NEW.usuario_crea_id);
+  VALUES(NOW(), 'creacion',  NEW.id, NEW.nombre_solicitante, NEW.fecha, NEW.asunto, NEW.texto_solicitud, NEW.usuario_crea_id);
 END$$
 DELIMITER ;
 
@@ -59,7 +59,7 @@ CREATE TRIGGER au_radicacion_log AFTER UPDATE ON radicaciones
 FOR EACH ROW
 BEGIN
   INSERT INTO radicacion_logs (fecha_log, accion, id_radicacion, nombre_solicitante, fecha, asunto, texto_solicitud, usuario_crea_id)
-  VALUES(NOW(), 'actualización',  NEW.id, NEW.nombre_solicitante, NEW.fecha, NEW.asunto, NEW.texto_solicitud, NEW.usuario_edita_id);
+  VALUES(NOW(), 'actualizacion',  NEW.id, NEW.nombre_solicitante, NEW.fecha, NEW.asunto, NEW.texto_solicitud, NEW.usuario_edita_id);
 END$$
 DELIMITER ;
 
