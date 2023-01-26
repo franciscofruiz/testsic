@@ -1,5 +1,8 @@
+# grant all on testsic.* to testsic@localhost identified by 'testsic' with grant option;
 # create database testsic;
 # use testsic;
+
+## DB STRUCTURE
 
 CREATE TABLE `usuarios` (
  `id` INT(11) NOT NULL AUTO_INCREMENT,
