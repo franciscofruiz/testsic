@@ -65,7 +65,9 @@ switch ($action) {
 
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Inicio</a></li>
-      <li class="nav-item"><a href="index.php?action=login" class="nav-link">Login</a></li>
+      <?php if( !isset($_SESSION['logged_in'])): ?>
+        <li class="nav-item"><a href="index.php?action=login" class="nav-link">Login</a></li>
+      <?php endif; ?>
       <li class="nav-item"><a href="index.php?action=radicaciones" class="nav-link">Radicaciones</a></li>
       <?php if( isset($_SESSION['logged_in']) && $_SESSION['logged_in']): ?>
         <li class="nav-item"><a href="index.php?action=close_session" class="nav-link">Cerrar Session</a></li>

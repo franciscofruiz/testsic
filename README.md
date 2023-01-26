@@ -52,3 +52,5 @@ Si no se cuenta con las dependencias requeridas se puede instalar WampServer 3.2
 ![Mysql Console](https://www.faroti.com/mysql-console.png)
 
 5. El aplicativo ya está instalado y listo para funcionar. Ingresar a http://localhost/testsic/
+
+6. Existe una tabla con logs para todos los movimientos que se realicen en las radicaciones, con fecha y hora, el nuevo contenido de la radicación y el usuario que la creó o modificó.
