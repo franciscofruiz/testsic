@@ -11,25 +11,28 @@ Para que la aplicación funcione se debe contar con los siguientes requerimiento
 
 Si no se cuenta con las dependencias requeridas se puede instalar WampServer 3.2.9 el cual trae las anteriores versiones.
 
-Instalación:
+**Instalación:**
 
 1. Clonar con el comando:
    git clone git@github.com:franciscofruiz/testsic.git testsic 
    
-   O descargar en formato zip (testsic-main.zip) del codigo fuente en formato zip desde https://github.com/franciscofruiz/testsic
+   O descargar el codigo fuente en formato zip (testsic-main.zip) desde https://github.com/franciscofruiz/testsic
 
 2. Mover el directorio con el codigo fuente en la carpeta www o document root definido en la configuración de apache. 
    Si se está usando wamp, en la ruta de instalacion del mismo en la carpeta /www/testsic/
 
 3. **config.php**. En este archivo se puede configurar la base de datos y el path relativo de la aplicación.
+
   3.1 Si por alguna razón el codigo se instala en otra carpeta diferente "testsic". Ingresar al archivo "testsic/config.php" y
    modificar la linea $relative_path = '/testsic';  con el nombre que corresponda al directorio.
+
   3.2. En el archivo se encuentran tambien  establecidas las credenciales por defecto para conexion a la base de datos. 
     'servername' => 'localhost',
     'username' => 'testsic',
     'password' => 'testsic',
     'db_name' => 'testsic'
-    NOTA: En caso de mantenerse la configuración por defecto en el punto 4 se describe como crear un usuario con todos los privilegios sobre la base de datos.
+
+    **NOTA:** En caso de mantenerse la configuración por defecto en el punto 4 se describe como crear un usuario con todos los privilegios sobre la base de datos.
 
 4. Estructura de la base de datos y seeds iniciales. Usar phpmyadmin, consola de mysql  o cualquier cliente para mysql server para crear la base de datos **antes de importar los archivos SQL**. Los comandos a continuación se pueden ejecutar en la consola de mysql.
  4.1. Crear la base de datos. **CREATE DATABASE testsic;**
@@ -39,6 +42,7 @@ Instalación:
  4.1 **seeds.sql** : contiene un bulk de datos de prueba, incluyendo dos usuarios de prueba **activos**, test@test.com con password test_123456 y test2@test.com  con password test2_123456
     source /path/donde/esta/el/archivo/seeds.sql
     **NOTA** Las contraseñas estan encriptadas a nivel de base de datos por tanto no son visibles a simplevista.  uso el algoritmo por defecto de php password_hash para encrimtacion.
+
 
 
 
