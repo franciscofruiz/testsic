@@ -56,11 +56,11 @@
 <table id="radicaciones" class="display" style="width:100%" data-page-length='25' data-searching="false">
         <thead>
             <tr>
-                <th>id</th>
-                <th>nombre_solicitante</th>
-                <th>fecha</th>
-                <th>asunto</th>
-                <th>texto_solicitud</th>
+                <th>Nro.</th>
+                <th>Nombre Solicitante</th>
+                <th>Fecha</th>
+                <th>Asunto</th>
+                <th>Texto Solicitud</th>
                 <th>Usuario</th>
                 <th>Acciones</th>
             </tr>
