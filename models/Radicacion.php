@@ -89,6 +89,7 @@ class Radicacion extends AppModel
         ".$WHERE."
         ORDER BY ".$order."
     ";
+    //echo $q;
     $result = self::$connection->query($q);
     $data = [];
     while($row = $result->fetch_assoc()) {
@@ -111,10 +112,10 @@ class Radicacion extends AppModel
       $conds[] = 'fecha <= "'.$filters['fecha_final'].'"';
     }
     if( isset($filters['nombre_solicitante'])  && $filters['nombre_solicitante']!='' ){
-      $conds[] = 'nombre_solicitante LIKE ("'.$filters['nombre_solicitante'].'%") ';
+      $conds[] = 'nombre_solicitante LIKE ("%'.$filters['nombre_solicitante'].'%") ';
     }
     if( isset($filters['asunto'])  && $filters['asunto']!='' ){
-      $conds[] = 'asunto LIKE ("'.$filters['asunto'].'%") ';
+      $conds[] = 'asunto LIKE ("%'.$filters['asunto'].'%") ';
     }
     if( isset($filters['usuario_crea_id'])  && (int)$filters['usuario_crea_id']>0 ){
       $conds[] = 'usuario_crea_id = '.(int)$filters['usuario_crea_id'].' ';
