@@ -48,7 +48,7 @@ class Usuario extends AppModel
           SET  status = ".$status."
           WHERE id = '".$Usuario->id."'";
     if (self::$connection->query($q) !== TRUE) {
-      die("Error updating record: " . self::$connection->error);
+      die("Error actualizando el registro: " . self::$connection->error);
     }
     self::close_connection();
   }
