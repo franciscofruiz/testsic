@@ -3,7 +3,6 @@ Prueba de PHP por Francisco Fabian Ruiz
 
 # Requerimientos:
 Para que la aplicación funcione se debe contar con los siguientes requerimientos:
-- cliente git
 - PHP 7.4.9
  - php mysqli extension
 - MYSQL 5.7.31
@@ -48,7 +47,7 @@ Si no se cuenta con las dependencias requeridas se puede instalar WampServer 3.2
   4.4 **seeds.sql** : contiene un bulk de datos de prueba, incluyendo dos usuarios de prueba **activos**, test@test.com con password test_123456 y test2@test.com  con password test2_123456
     `source /path/donde/esta/el/archivo/seeds.sql`
 
-**NOTA** Las contraseñas estan encriptadas a nivel de base de datos por tanto no son visibles a simplevista.  uso el algoritmo por defecto de php `password_hash` para encrimtacion.
+**NOTA** Las contraseñas estan encriptadas a nivel de base de datos por tanto no son visibles a simplevista.  uso el algoritmo por defecto de php `password_hash` para encriptación.
 
 ![Mysql Console](https://www.faroti.com/mysql-console.png)
 
