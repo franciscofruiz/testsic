@@ -31,8 +31,8 @@ Si no se cuenta con las dependencias requeridas se puede instalar WampServer 3.2
     'username' => 'testsic',
     'password' => 'testsic',
     'db_name' => 'testsic'
+**NOTA** En caso de mantenerse la configuración por defecto en el punto 4 se describe como crear un usuario con todos los privilegios sobre la base de datos.
 
-    **NOTA:** En caso de mantenerse la configuración por defecto en el punto 4 se describe como crear un usuario con todos los privilegios sobre la base de datos.
 
 4. Estructura de la base de datos y seeds iniciales. Usar phpmyadmin, consola de mysql  o cualquier cliente para mysql server para crear la base de datos **antes de importar los archivos SQL**. Los comandos a continuación se pueden ejecutar en la consola de mysql.
  4.1. Crear la base de datos. **CREATE DATABASE testsic;**
