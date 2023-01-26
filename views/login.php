@@ -2,7 +2,7 @@
   <main class="form-signin w-100 m-auto">
     <form action="index.php?action=login_validate" method="POST">
       <img class="mb-4" src="https://www.sic.gov.co/sites/default/files/images/2021/logo-sic-footer.png" alt="" height="57">
-      <h1 class="h3 mb-3 fw-normal">Please Ingresa tus datos</h1>
+      <h1 class="h3 mb-3 fw-normal">Por favor ingresa tus datos</h1>
 
       <div class="form-floating">
         <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required="">
